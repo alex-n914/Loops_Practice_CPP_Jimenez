@@ -7,6 +7,7 @@
 	and/or legitimate user error. 
 	//Try and Catch blocks are used in error checking
 	Teacher: Dr. Tyson McMillan, Ph.D.  
+  STUDENT: Alexandria Jimenez:
 */
 #include <cstdlib>  // Provides EXIT_SUCCESS
 #include <iostream>  // Provides cout, cerr, endl
@@ -18,9 +19,50 @@ using namespace std;
 
 int main()
 {
+  int n = 0; //declare and intialize the variable
+  //accept input int "n"
+  cout << "Please enter your number >";
+  cin >> n; 
+  //PROCESSING WITH LOOPS
+  while (n > 0) //while "n" is greater than 0, keep looping
+  {
+    cout << n << ", " << endl; //print current val of n,... exitPoint
+    --n;
+
+  }
+  cout << "FIRE!" << endl;
+
+  //prefix vs. postfix increment (++) or decrement (--)
+  int a = 0, b = 3;
+  a=++b;
+  //a contains 1, b contains 1
+  cout << "a=" << a << "b=" << b << endl;
+  //reset values 
+  a = 0, b = 3;
+  a=b++; 
+  //a contains 3, and b contains 4
+  cout << "a=" << a << "b=" << b << endl;
+
+  //processing do-while Loop
+  unsigned int z = 0;
+  do //all of this 
+  {
+    cout << "Please enter a number (0 to end): ";
+    cin >> z; 
+    cout << "You entered " << z << "\n";
+
+  }while (z != 0);  //while has the ; 
+
+  //processing for loop 
+  for(int i = 10; i > 0; i--)
+  {
+    cout << i << ", ";
+  }
+  cout << "FIRE!" << endl;
    //***********Validating int data type******************/
 	int input = 0;
-	input = validateInt(input); //validate my integer by function call, save that value into input
+  
+  input = validateInt(input); //validate my integer by function call, save that value into input
     cout << "You entered valid int: " << input << endl;
     
 	/****************Extend code to Validate double (follow int pattern)**********/
